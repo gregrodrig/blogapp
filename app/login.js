@@ -35,19 +35,20 @@ function btnlogin(){
     }).then(res =>res.json())
     .then(response =>{
         //almacenamos el valor de la clave en token
-        localStorage.setItem('token',JSON.stringify(response))
+        localStorage.setItem('token', response.token);
         //console.log('Sussess',JSON.stringify(response))
-        
+        location.href= "index.html";
         //recorrer el localStorage
         for (i=0;i<localStorage.length;i++){
             let llave=localStorage.key(i);
             var datos = localStorage.getItem(llave);    
             //console.log(datos);
-        }
+        } 
         console.log(datos);
         //console.log(JSON.parse(localStorage.getItem('token')));
     })       
         .catch(error =>
             console.log('Error',error)); 
+
 
 }

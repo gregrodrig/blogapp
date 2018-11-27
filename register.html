@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Primeras_ventanas</title>
     <link rel="stylesheet" href="assets/style.css">
+	<!-- jquery -->	
+	<script src="./assets/js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <script src="app/login.js"></script>
+	<script src="app/registrate.js"></script>
 </head>
 <body>
     <div class="limiter">
@@ -23,32 +25,32 @@
 						Registrarse
                     </span>
                     
-                    <div id="name" class="wrap-input100 validate-input" data-validate = "El nombre es requerido">
-						<input class="input100" type="text" name="name" placeholder="Nombre">
+                    <div class="wrap-input100 validate-input" data-validate = "El nombre es requerido">
+						<input id="name" class="input100" type="text" name="name" placeholder="Nombre">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<div id="email" class="wrap-input100 validate-input" data-validate = "El correo es requerido: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Correo electrónico">
+					<div class="wrap-input100 validate-input" data-validate = "El correo es requerido: ex@abc.xyz">
+						<input id="email" class="input100" type="text" name="email" placeholder="Correo electrónico">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<div id="password" class="wrap-input100 validate-input" data-validate = "La contraseña es requerida">
-						<input class="input100" type="password" name="pass" placeholder="Contraseña">
+					<div class="wrap-input100 validate-input" data-validate = "La contraseña es requerida">
+						<input id="password" class="input100" type="password" name="pass" placeholder="Contraseña">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
 
-                    <div id="password2" class="wrap-input100 validate-input" data-validate = "Repetir contraseña es requerida">
-						<input class="input100" type="password" name="pass" placeholder="Repetir Contraseña">
+                    <div  class="wrap-input100 validate-input" data-validate = "Repetir contraseña es requerida">
+						<input id="password2" class="input100" type="password" name="pass" placeholder="Repetir Contraseña">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -56,7 +58,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button id="btn" class="login100-form-btn">
+						<button id="btnRegistrar" type="button" class="login100-form-btn">
 							Registrarse
 						</button>
 					</div>
